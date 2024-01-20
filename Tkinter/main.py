@@ -24,10 +24,10 @@ def search_data(search_entry, root):
     if(user_input == "AED"):
         resource = '0106f818-dd7f-4150-bb5e-4207243d8b52'
         
-    elif(user_input == "文化財" or user_input == "文化財一覧"):
+    elif(user_input == "文化" or user_input == "文化財一覧"):
         resource = '928764f8-3c8d-4ad1-a269-9547bc788549'
         
-    elif(user_input == "医療機関" or user_input == "医療機関一覧" or user_input == "病院" or user_input == "病院一覧"):
+    elif(user_input == "医療機関" or user_input == "医療機関一覧" or user_input == "医療" or user_input == "病院一覧"):
         resource = '24885c01-3fa5-4cbf-b9bf-0cf8d34b3683'
         
     else:
