@@ -21,13 +21,6 @@ def search_data():
         if user_input in record['名称']:
             table.insert("", "end", values=(record['名称'], record['住所'], record['緯度'], record['経度']))
 
-def delecte_selected_data():
-    
-    selected_items = table.selection()
-    
-    for item in selected_items:
-        table.delete(item) 
-
 # Tkinterウィンドウの初期化
 root = tk.Tk()
 root.title("南城市避難場所検索")
@@ -46,7 +39,5 @@ table.heading("緯度", text="緯度")
 table.heading("経度", text="経度")
 table.pack(expand=True, fill="both")
 
-delecte_button = ttk.Button(root, text="選択したデータを削除", command=delecte_selected_data)
-delecte_button.pack(side=tk.TOP, fill=tk.X, padx=10, pady=10)
 # GUIを実行
 root.mainloop()
